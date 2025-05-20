@@ -1,10 +1,10 @@
 package Homework1_B;
-
+//Importing scanner for user input.
 import java.util.Scanner;
 
 public class PetClinic {
     public static void main(String[] args) {
-
+//Array of 10 pets.
         Pets[] pets = new Pets[10];
         pets[0] = new Pets("Billy", "Dog");
         pets[1] = new Pets("Jack", "Cat");
@@ -23,17 +23,17 @@ public class PetClinic {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter Pet Type: ");
         String inputType = sc.nextLine();
-
+//Shows the pets to the user.
         boolean found = false;
         System.out.println("Pets Of Type " + inputType + "Are: ");
 
-
+//For loop for printing the pet names.
         for (Pets pet : pets) {
             if (pet.getType().equalsIgnoreCase(inputType)) {
                 System.out.println("--" + pet.getName());
                 found = true;
             }
-        }
+        }     //Case if pet type not found.
                 if (!found) {
                     System.out.println("Pet Of This Type Not Found");
                 }

@@ -1,12 +1,12 @@
 package Homework1_C;
-
+//Car class.
 public class Car {
     private String model;
     private String plateNumber;
     private int kilometers;
     private boolean isRented;
 
-
+//Car class constructor.
     public Car(String model, String plateNumber, int kilometers) {
         this.model = model;
         this.plateNumber = plateNumber;
@@ -15,6 +15,7 @@ public class Car {
 
 
     }
+    //Getters that we will call later.
         public String getPlateNumber() {
         return plateNumber;
         }
@@ -27,7 +28,7 @@ public class Car {
         isRented = false;
         kilometers = newKilometers;
         }
-
+//Class method for displaying vehicle information.
         public void displayInfo() {
         System.out.println("Model: " + model +
                 ", Kilometers: " + kilometers +

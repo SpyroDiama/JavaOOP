@@ -1,5 +1,5 @@
 package Homework1_C;
-
+//Importing Scanner for user input.
 import java.util.Scanner;
 
 public class CarRental {
@@ -8,11 +8,11 @@ public class CarRental {
 
         //Car array with a fleet of cars, a fleet is 5 cars.
         Car[] cars = {
-                new Car("HIV690", "Nissan Navara", 72000),
-                new Car("SPI420", "Honda Civic", 4100),
-                new Car("JWX999", "Ford Focus ST line", 60000),
-                new Car("AL4K5O", "BMW X6", 32300),
-                new Car("GPK100", "Audi S3", 432000),
+                new Car("Nissan Navara", "H2342", 72000),
+                new Car("Honda Civic", "S4231", 4100),
+                new Car("Ford Focus ST line", "M2312", 60000),
+                new Car("BMW X6", "123X2", 32300),
+                new Car("Audi S3", "6521J", 432000),
 
         };
 
@@ -51,7 +51,7 @@ public class CarRental {
                     }
                 }
 
-
+                //Case if vehile is not found.
                 if (!found) {
                     System.out.println("Car not found.");
                 }
