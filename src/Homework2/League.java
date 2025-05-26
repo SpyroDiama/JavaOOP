@@ -1,14 +1,14 @@
 package Homework2;
-
+//Array and Scanner import.
 import java.util.ArrayList;
 import java.util.Scanner;
-
+//Using the array scanner outside the main function otherwise it cant be used.
 public class League {
     private static final ArrayList<Game> games = new ArrayList<>();
     private static final Scanner in = new Scanner(System.in);
 
     public static void main(String[] args) {
-
+        //Menu interface
         while(true){
             System.out.println("""
                 
@@ -19,7 +19,7 @@ public class League {
             String choice = in.nextLine().trim();
 
 
-
+        //Switches for the cases in the menu.
             switch(choice){
                 case "1" -> addGame();
                 case "2" -> showStats();
@@ -29,7 +29,7 @@ public class League {
             }
 
         }
-    }
+    } //Add game method and goal tracking.
     private static void addGame() {
         System.out.print("Home team: ");
         String homeTeamName = in.nextLine().trim();
@@ -45,7 +45,7 @@ public class League {
         games.add(new Game(homeTeamName, awayTeamName, hg, ag));
         System.out.println("Game saved");
     }
-
+        //Show team stats method.
     private static void showStats() {
         System.out.print("Team name: ");
         String t = in.nextLine().trim();
