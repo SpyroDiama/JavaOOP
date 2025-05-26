@@ -1,0 +1,58 @@
+ASSESSMENT 1 
+
+-----------------------------------------------------------------
+
+Inventory System
+
+The Store sells:
+
+A. Electronics, Attributes: Brand Name, Warrant Period.
+B. Clothing, Attributes: Sizes, Material, Colors.
+C. Grocery, Attributes: Weight, Expiration Date.
+
+//These are objects and therefore have attributes.//
+
+
+In this program we should have a general class for Products
+and subclasses for products being: electronics,clothing,grocery.
+
+----------------------------------------------------------------------
+
+Program Tasks :
+
+A menu system will provide options to search, add, and modify products.
+
+
+(a) Design the appropriate classes to support this system
+(b) Implement the application
+(c) Document the design and implementation 
+
+
+
+----------------------------------------------------------------------
+
+We should use INHERTIANCE 
+
+INHERITANCE : 
+
+Java Inheritance is a fundamental concept in object-oriented programming that allows a new class to inherit properties and behaviors (fields and methods) from an existing class. This promotes code reusability and establishes a hierarchical relationship between classes.
+
+
+------------------------------------------------------------------------
+
+
+Starting the code since we know the store sells specificaly 3 types of products, we will create a general class and make it abstract, this will help us create subclasses of the inventory without interferance and using the concept of inheritance. We then create two aditional classes for the inventory management and the menu.
+
+Every subclass will call their super attributes from Product class and after creating their constructors we make getters and methods we will later use.
+
+InventoryManagementSystem will act as a main function class and its where we run the program from and call InventoryManager, which holds the code for the menu system.
+
+This assessment was great for me to understand how multiple classes interact and inherit elements from each other to make more efficient code.
+
+When creating the menu importing a scanner for the user input and a list for the product list is mandatory, while we use switches to cover the different choices.
+
+Difficulties encountered were usually on how many classes i should have besides the product ones and how the class methods would be used later.
+
+
+
+
